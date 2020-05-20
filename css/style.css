@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body {
+  background: #DCF5FF;
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Nunito', 'sans-serif';
+}
+
+.inner {
+  background: #ca61e4;
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  -webkit-clip-path: circle(10% at 90% 80%);
+          clip-path: circle(10% at 90% 80%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+  -webkit-animation-name: aa;
+          animation-name: aa;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  background: #f14e4e !important;
+}
+
+.inner h1 {
+  color: white;
+  margin: 0;
+}
+
+.inner p {
+  color: white;
+  font-size: .8rem;
+}
+
+.inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  position: relative;
+  top: 82px;
+  margin-right: 4%;
+}
+
+.inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes aa {
+  from {
+    background: linear-gradient(135deg, blue, lightblue);
+  }
+  to {
+    background: linear-gradient(135deg, #f74040, #f09788);
+  }
+}
+
+@keyframes aa {
+  from {
+    background: linear-gradient(135deg, blue, lightblue);
+  }
+  to {
+    background: linear-gradient(135deg, #f74040, #f09788);
+  }
+}
+/*# sourceMappingURL=style.css.map */

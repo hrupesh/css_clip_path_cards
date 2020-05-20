@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    background: #DCF5FF;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items:center;
+    font-family: 'Nunito', 'sans-serif';
+}
+
+
+
+.inner {
+    background: #ca61e4;
+    padding: 1em;
+    border-radius: 10px;
+    width: 250px;
+    clip-path: circle(10% at 90% 80%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    animation-name: aa;
+    animation-duration: 0.5s;
+    // animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    // animation-direction: alternate;
+    // animation-play-state: running;
+
+    &:hover {
+        clip-path: circle(75%);
+        animation-play-state: paused;
+        background: #f14e4e !important;
+    }
+
+    h1 {
+        color: white;
+        margin: 0;
+    }
+
+    p {
+        color: white;
+        font-size: .8rem;
+    }
+    span {
+        float: right;
+        color: white;
+        font-weight: bold;
+        transition: color .5s;
+        position: relative;
+        top: 82px;
+        margin-right: 4%;
+    }
+    &:hover span {
+        color: rgba(255,255,255,0)
+    }
+}
+
+@keyframes aa{
+    from{background: linear-gradient(135deg,blue,lightblue);}
+    to{background: linear-gradient(135deg,rgb(247, 64, 64),rgb(240, 151, 136));}
+}
