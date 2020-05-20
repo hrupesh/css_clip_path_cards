@@ -29,7 +29,7 @@ body {
 
     &:hover {
         clip-path: circle(75%);
-        animation-play-state: paused;
+        animation:none;
         background: #f14e4e !important;
     }
 
