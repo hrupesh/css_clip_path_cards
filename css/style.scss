@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 body {
-    background: #DCF5FF;
+    background: linear-gradient(180deg, #bf66bd 35%, #8e66ef 75%);
     margin: 0;
     height: 100vh;
     display: grid;
+    // grid-row: 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items:center;
     font-family: 'Nunito', 'sans-serif';
+    animation-name: bg-aa;
+    animation-duration: 0.65s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+@keyframes bg-aa{
+    0%{background: linear-gradient(0deg, #bf66bd 35%, #8e66ef 75%);}
+    25%{background: linear-gradient(90deg, #bf66bd 35%, #8e66ef 75%);}
+    50%{background: linear-gradient(180deg, #bf66bd 35%, #8e66ef 75%);}
+    75%{background: linear-gradient(270deg, #bf66bd 35%, #8e66ef 75%);}
+    100%{background: linear-gradient(360deg, #bf66bd 35%, #8e66ef 75%);}
+}
 
 
 .inner {
@@ -20,6 +34,7 @@ body {
     clip-path: circle(10% at 90% 80%);
     transition: all .5s ease-in-out;
     cursor: pointer;
+    margin-bottom: 1rem;
     animation-name: aa;
     animation-duration: 0.5s;
     // animation-timing-function: ease-in-out;

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 body {
-  background: #DCF5FF;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #bf66bd), color-stop(75%, #8e66ef));
+  background: linear-gradient(180deg, #bf66bd 35%, #8e66ef 75%);
   margin: 0;
   height: 100vh;
   display: -ms-grid;
@@ -10,6 +11,61 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Nunito', 'sans-serif';
+  -webkit-animation-name: bg-aa;
+          animation-name: bg-aa;
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@-webkit-keyframes bg-aa {
+  0% {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, #bf66bd), color-stop(75%, #8e66ef));
+    background: linear-gradient(0deg, #bf66bd 35%, #8e66ef 75%);
+  }
+  25% {
+    background: -webkit-gradient(linear, left top, right top, color-stop(35%, #bf66bd), color-stop(75%, #8e66ef));
+    background: linear-gradient(90deg, #bf66bd 35%, #8e66ef 75%);
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #bf66bd), color-stop(75%, #8e66ef));
+    background: linear-gradient(180deg, #bf66bd 35%, #8e66ef 75%);
+  }
+  75% {
+    background: -webkit-gradient(linear, right top, left top, color-stop(35%, #bf66bd), color-stop(75%, #8e66ef));
+    background: linear-gradient(270deg, #bf66bd 35%, #8e66ef 75%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, #bf66bd), color-stop(75%, #8e66ef));
+    background: linear-gradient(360deg, #bf66bd 35%, #8e66ef 75%);
+  }
+}
+
+@keyframes bg-aa {
+  0% {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, #bf66bd), color-stop(75%, #8e66ef));
+    background: linear-gradient(0deg, #bf66bd 35%, #8e66ef 75%);
+  }
+  25% {
+    background: -webkit-gradient(linear, left top, right top, color-stop(35%, #bf66bd), color-stop(75%, #8e66ef));
+    background: linear-gradient(90deg, #bf66bd 35%, #8e66ef 75%);
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #bf66bd), color-stop(75%, #8e66ef));
+    background: linear-gradient(180deg, #bf66bd 35%, #8e66ef 75%);
+  }
+  75% {
+    background: -webkit-gradient(linear, right top, left top, color-stop(35%, #bf66bd), color-stop(75%, #8e66ef));
+    background: linear-gradient(270deg, #bf66bd 35%, #8e66ef 75%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, #bf66bd), color-stop(75%, #8e66ef));
+    background: linear-gradient(360deg, #bf66bd 35%, #8e66ef 75%);
+  }
 }
 
 .inner {
@@ -22,6 +78,7 @@ body {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   cursor: pointer;
+  margin-bottom: 1rem;
   -webkit-animation-name: aa;
           animation-name: aa;
   -webkit-animation-duration: 0.5s;
